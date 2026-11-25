@@ -27,6 +27,10 @@
       <nav class="detail-toc" aria-label="On this page"><p>On this page</p><a href="#overview">Overview</a></nav>
       <div>
         <section class="detail-section" id="overview"><h2>Project overview</h2><p>This project focused on feedback control of a pneumatically actuated flight simulator chair. A joystick was used to set the target acceleration, while an IMU measured real-time acceleration along x and y. An Arduino calculated the error between the two accelerations and used a PID controller to adjust the current supplied to a proportional valve, regulating the airflow and controlling the chair’s motion.</p>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 24px 0; align-items: start;">
+            <a href="chair-setup-front.jpg" target="_blank" rel="noopener"><img src="chair-setup-front.jpg" alt="Flight simulator chair front view with joystick and Arduino control electronics" loading="lazy" style="display: block; width: 100%; height: auto; border-radius: 8px;"></a>
+            <a href="chair-setup-rear.png" target="_blank" rel="noopener"><img src="chair-setup-rear.png" alt="Flight simulator chair rear view showing pneumatic and control components" loading="lazy" style="display: block; width: 100%; height: auto; border-radius: 8px;"></a>
+          </div>
 
           <p style="margin-top: 1.5rem;">The proportional valve works under a constant supply voltage. Therefore, a control circuit was designed to provide an adjustable current while maintaining a fixed supply voltage.</p>
           <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 24px; align-items: center;">
