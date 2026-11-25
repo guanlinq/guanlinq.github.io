@@ -24,10 +24,31 @@
       <div class="chips"><span>Biomedical robotics</span><span>Rehabilitation</span><span>Arduino</span><span>Device design</span></div>
     </header>
     <div class="detail-layout">
-      <nav class="detail-toc" aria-label="On this page"><p>On this page</p><a href="#overview">Overview</a><a href="#contributions">My contributions</a><a href="#methods">Approach</a><a href="#images">Images</a><a href="#video">Video</a></nav>
+      <nav class="detail-toc" aria-label="On this page"><p>On this page</p><a href="#overview">Overview</a><a href="#methods">Approach</a><a href="#images">Images</a><a href="#video">Video</a></nav>
       <div>
-        <section class="detail-section" id="overview"><h2>Project overview</h2><p>The project investigated a portable, game-controller-style robotic device for thumb rehabilitation after stroke. It combined mechanical device design, a simple game interface, and Arduino control.</p></section>
-        <section class="detail-section" id="contributions"><h2>My contributions</h2><ul><li>Participated in the design of a portable thumb rehabilitation device.</li><li>Developed an easy-to-use game interface for thumb-positioning exercises.</li><li>Programmed control algorithms using Arduino.</li></ul></section>
+        <section class="detail-section" id="overview">
+          <h2>Project overview</h2>
+          <p>Our team designed a handheld portable thumb rehabilitation robotic device for stroke patients. The device helps users improve thumb mobility by playing simple interactive games.</p>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 24px 0;">
+            <a href="thumb-device-in-use.jpg" target="_blank" rel="noopener"><img src="thumb-device-in-use.jpg" alt="Thumb rehabilitation device being used" loading="lazy" style="display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: #f1f5f7; border-radius: 8px;"></a>
+            <a href="thumb-device-front.png" target="_blank" rel="noopener"><img src="thumb-device-front.png" alt="Front view of the portable thumb rehabilitation device" loading="lazy" style="display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: #f1f5f7; border-radius: 8px;"></a>
+            <a href="thumb-device-rear.png" target="_blank" rel="noopener"><img src="thumb-device-rear.png" alt="Rear view of the portable thumb rehabilitation device" loading="lazy" style="display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: #f1f5f7; border-radius: 8px;"></a>
+            <a href="thumb-device-top.png" target="_blank" rel="noopener"><img src="thumb-device-top.png" alt="Top controls of the portable thumb rehabilitation device" loading="lazy" style="display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: #f1f5f7; border-radius: 8px;"></a>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 32px; align-items: start;">
+            <div style="min-width: 0;">
+              <h3 style="font-size: 1.2rem; line-height: 1.4; margin: 0 0 16px;">Game mode 1 : Circle jump game:</h3>
+              <a href="thumb-circle-jump.png" target="_blank" rel="noopener"><img src="thumb-circle-jump.png" alt="Circle jump game instructions and LED feedback" loading="lazy" style="display: block; width: 100%; height: auto;"></a>
+            </div>
+            <div style="min-width: 0;">
+              <h3 style="font-size: 1.2rem; line-height: 1.4; margin: 0 0 16px;">Game mode2: FindYourthumb:</h3>
+              <a href="thumb-find-your-thumb.png" target="_blank" rel="noopener"><img src="thumb-find-your-thumb.png" alt="FindYourthumb game instructions and position error feedback" loading="lazy" style="display: block; width: 100%; height: auto;"></a>
+            </div>
+          </div>
+          <p style="margin-top: 32px;">We invited 7 participants to play the games and results are shown below.</p>
+          <a href="thumb-participant-results.png" target="_blank" rel="noopener"><img src="thumb-participant-results.png" alt="Average angular error for seven participants in the two game modes" loading="lazy" style="display: block; width: 100%; height: auto;"></a>
+        </section>
         <section class="detail-section" id="methods"><h2>Technical approach</h2><p>The device connects physical thumb movement with an interactive game. The design emphasizes portability and ease of use, supported by embedded control.</p>
           <!-- Add further technical descriptions, equations, results, and experiment notes here. -->
         </section>
