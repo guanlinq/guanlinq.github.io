@@ -24,7 +24,7 @@
       <div class="chips"><span>PID control</span><span>Arduino</span><span>IMU</span><span>Pneumatics</span></div>
     </header>
     <div class="detail-layout">
-      <nav class="detail-toc" aria-label="On this page"><p>On this page</p><a href="#overview">Overview</a><a href="#contributions">My contributions</a><a href="#methods">Approach</a><a href="#images">Images</a><a href="#video">Video</a></nav>
+      <nav class="detail-toc" aria-label="On this page"><p>On this page</p><a href="#overview">Overview</a></nav>
       <div>
         <section class="detail-section" id="overview"><h2>Project overview</h2><p>This project focused on feedback control of a pneumatically actuated flight simulator chair. A joystick was used to set the target acceleration, while an IMU measured real-time acceleration along x and y. An Arduino calculated the error between the two accelerations and used a PID controller to adjust the current supplied to a proportional valve, regulating the airflow and controlling the chair’s motion.</p>
 
@@ -35,23 +35,16 @@
           </div>
 
           <p style="margin-top: 1.5rem;">Watch Videos for the chair in action:</p>
-        </section>
-        <section class="detail-section" id="contributions"><h2>My contributions</h2><ul><li>Designed an IMU-based Arduino control system for the chair.</li><li>Designed a constant-voltage, variable-current control circuit.</li><li>Programmed a PID algorithm to regulate flow rate and chair rotation speed.</li><li>Designed and 3D-printed fixtures for pneumatic cylinders, circuits, and supporting components.</li></ul></section>
-        <section class="detail-section" id="methods"><h2>Technical approach</h2><p>The control system uses IMU measurements as feedback. A PID algorithm regulates the pneumatic flow to adjust the chair rotation speed, supported by a variable-current circuit and custom mechanical fixtures.</p>
-          <!-- Add further technical descriptions, equations, results, and experiment notes here. -->
-        </section>
-        <section class="detail-section" id="images"><h2>Images &amp; documentation</h2>
-          <!-- Replace the illustration with a project photograph. Duplicate the figure to add more images. -->
-          <figure class="project-figure"><a href="flight-chair.svg" target="_blank" rel="noopener"><img src="flight-chair.svg" alt="Illustration for Flight Simulator Chair" loading="lazy"></a><figcaption>Illustrative project preview. Experiment photographs and diagrams will be added here.</figcaption></figure>
-        </section>
-        <section class="detail-section" id="video"><h2>Project video</h2>
-          <!-- To add a video, upload flight-simulator-chair-demo.mp4 and replace the video-empty div with:
-          <video class="project-video" controls playsinline preload="metadata" poster="flight-chair.svg">
-            <source src="flight-simulator-chair-demo.mp4" type="video/mp4">
-            Your browser does not support embedded video.
-          </video>
-          For hosted videos, replace the placeholder with a YouTube/Vimeo embed. -->
-          <div class="video-empty"><strong>Project video</strong><span>Experiment and demonstration footage will be added here.</span></div>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start;">
+            <video controls playsinline preload="metadata" aria-label="Flight simulator chair first-person view" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #0b1f36; border-radius: 8px;">
+              <source src="chair-demo-first-person.mp4" type="video/mp4">
+              <a href="chair-demo-first-person.mp4">Watch first-person view</a>
+            </video>
+            <video controls playsinline preload="metadata" aria-label="Flight simulator chair demonstration" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #0b1f36; border-radius: 8px;">
+              <source src="chair-demo.mp4" type="video/mp4">
+              <a href="chair-demo.mp4">Watch chair demonstration</a>
+            </video>
+          </div>
         </section>
         <div class="detail-footer"><a href="index.html#research">Back to all research</a><a href="thumb-rehabilitation.html">Next project: Thumb Rehabilitation Robot</a></div>
       </div>
